@@ -17,4 +17,4 @@ print(roundRot("abc", "cab"))
 print(roundRot("aa", "ab"))
 print(roundRot("abcdabza", "cdabzaab"))
 
-# tests run using Atom Script Package
+# tested using Atom Script Package
