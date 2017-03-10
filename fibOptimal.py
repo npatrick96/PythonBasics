@@ -31,6 +31,24 @@ def fibFast2(n):
         fibtable[n] = fibFast2(n-1) + fibFast2(n-2)
     return fibtable[n]
 print (fibFast2(40)) # faster !!!
+lst = [0] * 10
+print(lst)
+print(4%2)
+
+
+
+def fibFast3(n):
+    fibs = [0] * (n+1)
+    fibs[1] = 1
+    fibs[2] = 1
+    for i in range(3, n+1):
+        #print (fibs)
+        if i%2 == 0:
+            fibs[i] = fibs[i/2] * ( fibs[1+(i/2)] + fibs[-1+(i/2)])
+        #else:
+            #fibs[i] = fibs[i-1] + fibs[i-2]
+    return fibs[i]
+print (fibFast3(40)) # faster !!!
     
     
     
